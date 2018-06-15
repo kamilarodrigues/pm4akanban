@@ -40,6 +40,8 @@ Unlike a certain other website...`
         {text: "teste"}
     ];
 
+    const list4 = [];
+
     return {
         _id: shortid.generate(),
         title: "Tutorial board",
@@ -67,6 +69,11 @@ Unlike a certain other website...`
             },
             {
                 _id: shortid.generate(),
+                title: "Fontes de dados",
+                cards: appendAttributes(list4)
+            },
+            {
+                _id: shortid.generate(),
                 title: "Internas",
                 cards: appendAttributes(list3)
             },
@@ -77,17 +84,22 @@ Unlike a certain other website...`
             },
             {
                 _id: shortid.generate(),
+                title: "Matriz influência das pessoas e riscos",
+                cards: appendAttributes(list4)
+            },
+            {
+                _id: shortid.generate(),
+                title: "Payback period",
+                cards: appendAttributes(list4)
+            },
+            {
+                _id: shortid.generate(),
                 title: "Poder de influência",
                 cards: appendAttributes(list3)
             },
             {
                 _id: shortid.generate(),
                 title: "Impacto",
-                cards: appendAttributes(list3)
-            },
-            {
-                _id: shortid.generate(),
-                title: "Payback period",
                 cards: appendAttributes(list3)
             }
         ],
