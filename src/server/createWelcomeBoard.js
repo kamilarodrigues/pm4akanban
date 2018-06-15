@@ -90,7 +90,7 @@ Unlike a certain other website...`
             {
                 _id: shortid.generate(),
                 title: "Payback period",
-                cards: appendAttributes(list4)
+                cards: appendAttributes(list3)
             },
             {
                 _id: shortid.generate(),
