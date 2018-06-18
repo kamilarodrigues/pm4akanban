@@ -4,7 +4,7 @@ const isGuest = (state = false, action) => {
       return true;
     }
     default:
-      return state;
+      return true;
   }
 };
 
