@@ -38,7 +38,7 @@ class List extends Component {
                                 boardId={boardId}
                             />
                             <div className="cards-wrapper">
-                                <Cards listId={list._id}/>
+                                <Cards listId={list._id} index={index}/>
                             </div>
                         </div>
                         {index!=4 && index!=7 && index!=8? <CardAdder listId={list._id}/> : ''}

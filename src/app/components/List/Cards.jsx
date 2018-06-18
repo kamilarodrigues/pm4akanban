@@ -7,7 +7,8 @@ import Card from "../Card/Card";
 class Cards extends Component {
   static propTypes = {
     listId: PropTypes.string.isRequired,
-    cards: PropTypes.arrayOf(PropTypes.string).isRequired
+    cards: PropTypes.arrayOf(PropTypes.string).isRequired,
+    index: PropTypes.number.isRequired
   };
 
   componentDidUpdate = prevProps => {
@@ -25,9 +26,9 @@ class Cards extends Component {
   };
 
   render() {
-    const { listId, cards } = this.props;
+    const { listId, cards, index } = this.props;
     return (
-      <Droppable droppableId={listId}>
+      <Droppable droppableId={listId} isDropDisabled={index == 4 || index == 7 || index == 9?true:false}>
         {(provided, { isDraggingOver }) => (
           <>
             <div className="cards" ref={provided.innerRef}>
