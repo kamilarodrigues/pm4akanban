@@ -107,10 +107,12 @@
 
 .height-bottom-1 {
   height: 272px;
+  border: none !important;
 }
 
 .height-bottom-2 {
   height: 272px;
+  border: none !important;
 }
 
 .height-bottom-3 {
@@ -123,14 +125,17 @@
 
 .height-bottom-5 {
   height: 125px;
+  border: none !important;
 }
 
 .height-bottom-6 {
   height: 125px;
+  border: none !important;
 }
 
 .blue .list {
-  background: $transparent-blue;
+  background: transparent;
+  border: 1px solid #ccc;
 }
 .green .list {
   background: $transparent-green;
@@ -151,7 +156,7 @@
   margin: 0 3px 6px 3px;
   overflow-y: auto;
   overflow-x: hidden;
-  height: 72%;
+  height: 79%;
 }
 
 .cards-wrapper::-webkit-scrollbar {
