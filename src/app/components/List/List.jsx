@@ -37,7 +37,7 @@ class List extends Component {
                                 cards={list.cards}
                                 boardId={boardId}
                             />
-                            <div className="cards-wrapper">
+                            <div className={index==5 || index==6 ? 'cards-wrapper list-card' : 'card-wrapper'}>
                                 <Cards listId={list._id} index={index} boardId={boardId} listTitle={list.title}/>
                             </div>
                         </div>

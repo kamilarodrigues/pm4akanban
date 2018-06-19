@@ -40,65 +40,65 @@
 .position-bottom-0 {
   width: 50% !important;
   position: absolute;
-  top: 395px;
+  top: 345px;
 }
 
 .position-bottom-1 {
   width: 24% !important;
   position: absolute;
-  top: 440px;
+  top: 370px;
   left: 1%;
 }
 
 .position-bottom-2 {
   width: 24% !important;
   position: absolute;
-  top: 440px;
+  top: 370px;
   left: 25.5%;
 }
 
 .position-bottom-3 {
   width: 50% !important;
   position: absolute;
-  top: 395px;
+  top: 345px;
   left: 50%;
 }
 
 .position-bottom-4 {
   width: 50% !important;
   position: absolute;
-  top: 620px;
+  top: 595px;
   left: 50%;
 }
 
 .position-bottom-5 {
   width: 24% !important;
   position: absolute;
-  top: 440px;
+  top: 370px;
   left: 50.5%;
 }
 
 .position-bottom-6 {
   width: 24% !important;
   position: absolute;
-  top: 440px;
+  top: 370px;
   left: 75%;
 }
 
 .height-0 {
-  height: 320px;
+  height: 285px;
 }
 
 .height-1 {
-  height: 320px;
+  height: 285px;
 }
 
 .height-2 {
-  height: 320px;
+  height: 285px;
 }
 
 .height-3 {
-  height: 320px;
+  height: 285px;
 }
 
 .height-bottom-0 {
@@ -106,30 +106,30 @@
 }
 
 .height-bottom-1 {
-  height: 272px;
+  height: 295px;
   border: none !important;
 }
 
 .height-bottom-2 {
-  height: 272px;
+  height: 295px;
   border: none !important;
 }
 
 .height-bottom-3 {
-  height: 170px;
+  height: 200px;
 }
 
 .height-bottom-4 {
-  height: 95px;
+  height: 70px;
 }
 
 .height-bottom-5 {
-  height: 125px;
+  height: 175px;
   border: none !important;
 }
 
 .height-bottom-6 {
-  height: 125px;
+  height: 175px;
   border: none !important;
 }
 
@@ -156,7 +156,11 @@
   margin: 0 3px 6px 3px;
   overflow-y: auto;
   overflow-x: hidden;
-  height: 79%;
+  height: 75%;
+}
+
+.list-card {
+  height: 103px !important;
 }
 
 .cards-wrapper::-webkit-scrollbar {

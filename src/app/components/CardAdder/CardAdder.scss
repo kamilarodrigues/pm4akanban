@@ -8,13 +8,14 @@
   float: right; // removes mysterious empty space at the bottom of the textarea somehow
   box-sizing: border-box;
   width: 100%;
-  padding: 10px 8px;
+  padding: 4px 10px;
   border: 0;
-  border-radius: 3px;
+  border-radius: 2px;
   color: inherit;
   font-family: inherit;
-  font-size: 16px;
-  resize: none;
+  font-size: 12px;
+  z-index: 15000;
+  background: #FFFFFF;
 }
 
 .add-card-button {
