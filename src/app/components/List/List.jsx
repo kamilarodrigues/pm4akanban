@@ -25,10 +25,10 @@ class List extends Component {
                     <>
                     <div
                         ref={provided.innerRef}
-                        className={'list-wrapper position-'+index}
+                        className={'list-wrapper position-'+(boardId=="TESTE"?'bottom-':'')+index}
                     >
                         <div
-                            className={"list height-"+index}
+                            className={"list height-"+(boardId=="TESTE"?'bottom-':'')+index}
                         >
                             <ListHeader
                                 dragHandleProps={provided.dragHandleProps}
@@ -38,10 +38,10 @@ class List extends Component {
                                 boardId={boardId}
                             />
                             <div className="cards-wrapper">
-                                <Cards listId={list._id} index={index}/>
+                                <Cards listId={list._id} index={index} boardId={boardId}/>
                             </div>
                         </div>
-                        {index!=4 && index!=7 && index!=8? <CardAdder listId={list._id}/> : ''}
+                        {boardId=="TESTE"?(index!=0 && index!=3 && index!=4? <CardAdder listId={list._id}/> : ''):(<CardAdder listId={list._id}/>)}
                     </div>
                     {provided.placeholder}
                     </>

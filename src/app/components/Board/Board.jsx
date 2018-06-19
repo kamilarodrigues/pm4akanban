@@ -130,6 +130,8 @@ class Board extends Component {
 
   render = () => {
     const { lists, boardTitle, boardId, boardColor } = this.props;
+    var leftSide = lists.splice(0, 4);
+    var rightSide = lists.splice(0, 11);
     return (
       <>
         <div className={classnames("board", boardColor)}>
@@ -147,10 +149,42 @@ class Board extends Component {
                 direction="horizontal">
                 {provided => (
                   <div className="lists" ref={provided.innerRef}>
-                    {lists.map((list, index) => (
+                    {leftSide.map((list, index) => (
                       <List
                         list={list}
                         boardId={boardId}
+                        index={index}
+                        key={list._id}
+                      />
+                    ))}
+                    {provided.placeholder}
+                  </div>
+                )}
+              </Droppable>
+            </DragDropContext>
+          </div>
+          <div className="board-underlay" />
+        </div>
+
+        <div className={classnames("board", boardColor)}>
+          <Helmet>
+            <title>{boardTitle} | React Kanban</title>
+          </Helmet>
+          <div className="lists-wrapper"
+            onMouseDown={this.handleMouseDown}
+            onWheel={this.handleWheel}
+          >
+            <DragDropContext onDragEnd={this.handleDragEnd}>
+              <Droppable
+                droppableId="TESTE"
+                type="COLUMN"
+                direction="horizontal">
+                {provided => (
+                  <div className="lists" ref={provided.innerRef}>
+                    {rightSide.map((list, index) => (
+                      <List
+                        list={list}
+                        boardId={"TESTE"}
                         index={index}
                         key={list._id}
                       />

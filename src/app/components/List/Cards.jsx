@@ -8,7 +8,8 @@ class Cards extends Component {
   static propTypes = {
     listId: PropTypes.string.isRequired,
     cards: PropTypes.arrayOf(PropTypes.string).isRequired,
-    index: PropTypes.number.isRequired
+    index: PropTypes.number.isRequired,
+    boardId: PropTypes.string.isRequired
   };
 
   componentDidUpdate = prevProps => {
@@ -26,9 +27,9 @@ class Cards extends Component {
   };
 
   render() {
-    const { listId, cards, index } = this.props;
+    const { listId, cards, index, boardId } = this.props;
     return (
-      <Droppable droppableId={listId} isDropDisabled={index == 4 || index == 7 || index == 9?true:false}>
+      <Droppable droppableId={listId} isDropDisabled={boardId=="TESTE"?(index==0 || index==3 || index==4?true:false):false}>
         {(provided, { isDraggingOver }) => (
           <>
             <div className="cards" ref={provided.innerRef}>
