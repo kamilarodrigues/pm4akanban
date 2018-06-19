@@ -38,7 +38,7 @@ class List extends Component {
                                 boardId={boardId}
                             />
                             <div className="cards-wrapper">
-                                <Cards listId={list._id} index={index} boardId={boardId}/>
+                                <Cards listId={list._id} index={index} boardId={boardId} listTitle={list.title}/>
                             </div>
                         </div>
                         {boardId=="TESTE"?(index!=0 && index!=3 && index!=4? <CardAdder listId={list._id}/> : ''):(<CardAdder listId={list._id}/>)}

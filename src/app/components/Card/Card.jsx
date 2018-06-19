@@ -19,7 +19,8 @@ class Card extends Component {
     listId: PropTypes.string.isRequired,
     isDraggingOver: PropTypes.bool.isRequired,
     index: PropTypes.number.isRequired,
-    dispatch: PropTypes.func.isRequired
+    dispatch: PropTypes.func.isRequired,
+    listTitle: PropTypes.string.isRequired
   };
 
   constructor() {
@@ -74,12 +75,12 @@ class Card extends Component {
   };
 
   render() {
-    const { card, index, listId, isDraggingOver } = this.props;
+    const { card, index, listId, isDraggingOver, listTitle } = this.props;
     const { isModalOpen } = this.state;
     const checkboxes = findCheckboxes(card.text);
     return (
       <>
-        <Draggable draggableId={card._id} index={index}>
+        <Draggable draggableId={card._id} index={index} isDragDisabled={listTitle=="Payback period"?true:false}>
           {(provided, snapshot) => (
             <>
               {/* eslint-disable */}

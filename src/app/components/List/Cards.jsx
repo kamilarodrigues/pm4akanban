@@ -9,7 +9,8 @@ class Cards extends Component {
     listId: PropTypes.string.isRequired,
     cards: PropTypes.arrayOf(PropTypes.string).isRequired,
     index: PropTypes.number.isRequired,
-    boardId: PropTypes.string.isRequired
+    boardId: PropTypes.string.isRequired,
+    listTitle: PropTypes.string.isRequired
   };
 
   componentDidUpdate = prevProps => {
@@ -27,7 +28,7 @@ class Cards extends Component {
   };
 
   render() {
-    const { listId, cards, index, boardId } = this.props;
+    const { listId, cards, index, boardId, listTitle } = this.props;
     return (
       <Droppable droppableId={listId} isDropDisabled={boardId=="TESTE"?(index==0 || index==3 || index==4?true:false):false}>
         {(provided, { isDraggingOver }) => (
@@ -40,6 +41,7 @@ class Cards extends Component {
                   cardId={cardId}
                   index={index}
                   listId={listId}
+                  listTitle={listTitle}
                 />
               ))}
               {provided.placeholder}
