@@ -15,12 +15,12 @@ class Cards extends Component {
 
   componentDidUpdate = prevProps => {
     // Scroll to bottom of list if a new card has been added
-    if (
+    /*if (
       this.props.cards[this.props.cards.length - 2] ===
       prevProps.cards[prevProps.cards.length - 1]
     ) {
       this.scrollToBottom();
-    }
+    }*/
   };
 
   scrollToBottom = () => {
@@ -30,7 +30,7 @@ class Cards extends Component {
   render() {
     const { listId, cards, index, boardId, listTitle } = this.props;
     return (
-      <Droppable droppableId={listId} isDropDisabled={boardId=="TESTE"?(index==0 || index==3 || index==4?true:false):false}>
+      <Droppable droppableId={listId} isDropDisabled={boardId=="DOWN LEFT"?(index==0?true:false):(boardId=="DOWN RIGHT"?(index==0 || index==1?true:false):false)}>
         {(provided, { isDraggingOver }) => (
           <>
             <div className="cards" ref={provided.innerRef}>

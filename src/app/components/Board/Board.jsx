@@ -130,8 +130,10 @@ class Board extends Component {
 
   render = () => {
     const { lists, boardTitle, boardId, boardColor } = this.props;
-    var leftSide = lists.splice(0, 4);
-    var rightSide = lists.splice(0, 11);
+    var upList = lists.splice(0, 4);
+    var downList = lists.splice(0, 11);
+    var downLeftList = downList.splice(0, 3);
+    var downRightList = downList.splice(0, 10);
     return (
       <>
         <div className={classnames("board", boardColor)}>
@@ -149,7 +151,7 @@ class Board extends Component {
                 direction="horizontal">
                 {provided => (
                   <div className="lists" ref={provided.innerRef}>
-                    {leftSide.map((list, index) => (
+                    {upList.map((list, index) => (
                       <List
                         list={list}
                         boardId={boardId}
@@ -176,15 +178,47 @@ class Board extends Component {
           >
             <DragDropContext onDragEnd={this.handleDragEnd}>
               <Droppable
-                droppableId="TESTE"
+                droppableId="DOWN LEFT"
                 type="COLUMN"
                 direction="horizontal">
                 {provided => (
                   <div className="lists" ref={provided.innerRef}>
-                    {rightSide.map((list, index) => (
+                    {downLeftList.map((list, index) => (
                       <List
                         list={list}
-                        boardId={"TESTE"}
+                        boardId={"DOWN LEFT"}
+                        index={index}
+                        key={list._id}
+                      />
+                    ))}
+                    {provided.placeholder}
+                  </div>
+                )}
+              </Droppable>
+            </DragDropContext>
+          </div>
+          <div className="board-underlay" />
+        </div>
+
+        <div className={classnames("board", boardColor)}>
+          <Helmet>
+            <title>{boardTitle} | React Kanban</title>
+          </Helmet>
+          <div className="lists-wrapper"
+            onMouseDown={this.handleMouseDown}
+            onWheel={this.handleWheel}
+          >
+            <DragDropContext onDragEnd={this.handleDragEnd}>
+              <Droppable
+                droppableId="DOWN RIGHT"
+                type="COLUMN"
+                direction="horizontal">
+                {provided => (
+                  <div className="lists" ref={provided.innerRef}>
+                    {downRightList.map((list, index) => (
+                      <List
+                        list={list}
+                        boardId={"DOWN RIGHT"}
                         index={index}
                         key={list._id}
                       />

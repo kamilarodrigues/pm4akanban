@@ -16,6 +16,7 @@ class List extends Component {
 
     render = () => {
         const {list, boardId, index} = this.props;
+        console.log(index);
         return (
             <Draggable
                 draggableId={list._id}
@@ -25,10 +26,10 @@ class List extends Component {
                     <>
                     <div
                         ref={provided.innerRef}
-                        className={'list-wrapper position-'+(boardId=="TESTE"?'bottom-':'')+index}
+                        className={'list-wrapper position-'+(boardId=="DOWN LEFT"?'bottom-left-':(boardId=="DOWN RIGHT"?'bottom-right-':''))+index}
                     >
                         <div
-                            className={"list height-"+(boardId=="TESTE"?'bottom-':'')+index}
+                            className={"list height-"+(boardId=="DOWN LEFT"?'bottom-left-':(boardId=="DOWN RIGHT"?'bottom-right-':''))+index}
                         >
                             <ListHeader
                                 dragHandleProps={provided.dragHandleProps}
@@ -41,7 +42,7 @@ class List extends Component {
                                 <Cards listId={list._id} index={index} boardId={boardId} listTitle={list.title}/>
                             </div>
                         </div>
-                        {boardId=="TESTE"?(index!=0 && index!=3 && index!=4? <CardAdder listId={list._id}/> : ''):(<CardAdder listId={list._id}/>)}
+                        {boardId=="DOWN LEFT"?(index!=0? <CardAdder listId={list._id}/> : ''):(boardId=="DOWN RIGHT"?(index!=0 && index!=1?<CardAdder listId={list._id}/>:''):<CardAdder listId={list._id}/>)}
                     </div>
                     {provided.placeholder}
                     </>
