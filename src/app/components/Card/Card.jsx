@@ -95,7 +95,9 @@ class Card extends Component {
                 {...provided.draggableProps}
                 {...provided.dragHandleProps}
                 onClick={event => {
-                  provided.dragHandleProps.onClick(event);
+                  if(listTitle!="Payback period") {
+                    provided.dragHandleProps.onClick(event);
+                  }
                   this.handleClick(event);
                 }}
                 onKeyDown={event => {
