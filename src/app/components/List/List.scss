@@ -214,7 +214,7 @@
   transform: rotate(-90deg);
   position: absolute;
   color: #8b8b8b;
-  left: 22%;
+  left: 22.25%;
   top: 525px;
   font-family: inherit;
   font-size: 15px;
@@ -224,7 +224,7 @@
   transform: rotate(-90deg);
   position: absolute;
   color: #8b8b8b;
-  left: 23%;
+  left: 22.85%;
   top: 770px;
   font-family: inherit;
   font-size: 15px;
@@ -236,4 +236,12 @@
   width: 635px;
   left: 25px;
   top: 700px;
+}
+
+.dashed-line-vertical {
+  position: absolute;
+  border-left: dashed 1px #bdbdbd;
+  height: 435px;
+  left: 350px;
+  top: 400px;
 }

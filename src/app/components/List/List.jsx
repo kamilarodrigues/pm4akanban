@@ -47,6 +47,7 @@ class List extends Component {
                     {boardId=="DOWN LEFT" && index==0?<div className={'available'}>Disponíveis</div>:''}
                     {boardId=="DOWN LEFT" && index==0?<div className={'missing'}>Faltantes</div>:''}
                     {boardId=="DOWN LEFT" && index==0?<div className={'dashed-line'} />:''}
+                    {boardId=="DOWN LEFT" && index==0?<div className={'dashed-line-vertical'} />:''}
                     {provided.placeholder}
                     </>
                 )}
