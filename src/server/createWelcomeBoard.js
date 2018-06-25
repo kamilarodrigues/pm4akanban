@@ -84,6 +84,14 @@ Unlike a certain other website...`
             },
             {
                 _id: shortid.generate(),
+                cards: appendAttributes(list3)
+            },
+            {
+                _id: shortid.generate(),
+                cards: appendAttributes(list3)
+            },
+            {
+                _id: shortid.generate(),
                 title: "Matriz influência das pessoas e riscos",
                 cards: appendAttributes(list4)
             },

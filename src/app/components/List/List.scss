@@ -57,6 +57,20 @@
   left: 25.5%;
 }
 
+.position-bottom-left-3 {
+  width: 24% !important;
+  position: absolute;
+  top: 545px;
+  left: 1%;
+}
+
+.position-bottom-left-4 {
+  width: 24% !important;
+  position: absolute;
+  top: 545px;
+  left: 25.5%;
+}
+
 .position-bottom-right-0 {
   width: 50% !important;
   position: absolute;
@@ -106,12 +120,22 @@
 }
 
 .height-bottom-left-1 {
-  height: 295px;
+  height: 155px;
   border: none !important;
 }
 
 .height-bottom-left-2 {
-  height: 295px;
+  height: 155px;
+  border: none !important;
+}
+
+.height-bottom-left-3 {
+  height: 120px;
+  border: none !important;
+}
+
+.height-bottom-left-4 {
+  height: 120px;
   border: none !important;
 }
 
@@ -161,6 +185,14 @@
 
 .list-card {
   height: 103px !important;
+}
+
+.list-card-small {
+  height: 84px !important;
+}
+
+.list-card-ultra-small {
+  height: 68px !important;
 }
 
 .cards-wrapper::-webkit-scrollbar {

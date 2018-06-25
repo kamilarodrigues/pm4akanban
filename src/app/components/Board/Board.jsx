@@ -132,8 +132,8 @@ class Board extends Component {
     const { lists, boardTitle, boardId, boardColor } = this.props;
     var upList = lists.splice(0, 4);
     var downList = lists.splice(0, 11);
-    var downLeftList = downList.splice(0, 3);
-    var downRightList = downList.splice(0, 10);
+    var downLeftList = downList.splice(0, 5);
+    var downRightList = downList.splice(0, 12);
     return (
       <>
         <div className={classnames("board", boardColor)}>
@@ -231,6 +231,8 @@ class Board extends Component {
           </div>
           <div className="board-underlay" />
         </div>
+
+        <div className="space" />
       </>
     );
   };
