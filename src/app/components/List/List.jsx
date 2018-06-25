@@ -38,12 +38,15 @@ class List extends Component {
                                 cards={list.cards}
                                 boardId={boardId}
                             />
-                            <div className={boardId=="DOWN RIGHT"?(index==2||index==3?'cards-wrapper list-card':'cards-wrapper'):(boardId=="DOWN LEFT"?(index!=0?'cards-wrapper list-card-'+(index==1||index==2?'small':'ultra-small'):'cards-wrapper'):'cards-wrapper')}>
+                            <div className={boardId=="DOWN RIGHT"?(index==2||index==3?'cards-wrapper list-card-small':'cards-wrapper'):(boardId=="DOWN LEFT"?(index!=0?'cards-wrapper list-card-'+(index==1||index==2?'small':'ultra-small'):'cards-wrapper'):'cards-wrapper')}>
                                 <Cards listId={list._id} index={index} boardId={boardId} listTitle={list.title}/>
                             </div>
                         </div>
                         {boardId=="DOWN LEFT"?(index!=0? <CardAdder listId={list._id}/> : ''):(boardId=="DOWN RIGHT"?(index!=0 && index!=1?<CardAdder listId={list._id}/>:''):<CardAdder listId={list._id}/>)}
                     </div>
+                    {boardId=="DOWN LEFT" && index==0?<div className={'available'}>Disponíveis</div>:''}
+                    {boardId=="DOWN LEFT" && index==0?<div className={'missing'}>Faltantes</div>:''}
+                    {boardId=="DOWN LEFT" && index==0?<div className={'dashed-line'} />:''}
                     {provided.placeholder}
                     </>
                 )}

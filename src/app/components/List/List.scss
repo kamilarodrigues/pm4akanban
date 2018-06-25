@@ -60,14 +60,14 @@
 .position-bottom-left-3 {
   width: 24% !important;
   position: absolute;
-  top: 545px;
+  top: 700px;
   left: 1%;
 }
 
 .position-bottom-left-4 {
   width: 24% !important;
   position: absolute;
-  top: 545px;
+  top: 700px;
   left: 25.5%;
 }
 
@@ -81,7 +81,7 @@
 .position-bottom-right-1 {
   width: 50% !important;
   position: absolute;
-  top: 595px;
+  top: 775px;
   left: 50%;
 }
 
@@ -116,31 +116,31 @@
 }
 
 .height-bottom-left-0 {
-  height: 320px;
+  height: 500px;
 }
 
 .height-bottom-left-1 {
-  height: 155px;
+  height: 310px;
   border: none !important;
 }
 
 .height-bottom-left-2 {
-  height: 155px;
+  height: 310px;
   border: none !important;
 }
 
 .height-bottom-left-3 {
-  height: 120px;
+  height: 145px;
   border: none !important;
 }
 
 .height-bottom-left-4 {
-  height: 120px;
+  height: 145px;
   border: none !important;
 }
 
 .height-bottom-right-0 {
-  height: 200px;
+  height: 335px;
 }
 
 .height-bottom-right-1 {
@@ -148,12 +148,12 @@
 }
 
 .height-bottom-right-2 {
-  height: 175px;
+  height: 310px;
   border: none !important;
 }
 
 .height-bottom-right-3 {
-  height: 175px;
+  height: 310px;
   border: none !important;
 }
 
@@ -188,11 +188,11 @@
 }
 
 .list-card-small {
-  height: 84px !important;
+  height: 238px !important;
 }
 
 .list-card-ultra-small {
-  height: 68px !important;
+  height: 90px !important;
 }
 
 .cards-wrapper::-webkit-scrollbar {
@@ -208,4 +208,32 @@
 .cards {
   min-height: 1px;
   margin-bottom: 3px;
+}
+
+.available {
+  transform: rotate(-90deg);
+  position: absolute;
+  color: #8b8b8b;
+  left: 22%;
+  top: 525px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.missing {
+  transform: rotate(-90deg);
+  position: absolute;
+  color: #8b8b8b;
+  left: 23%;
+  top: 770px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.dashed-line {
+  position: absolute;
+  border-top: dashed 1px #bdbdbd;
+  width: 635px;
+  left: 25px;
+  top: 700px;
 }
