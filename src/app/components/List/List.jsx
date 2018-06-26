@@ -48,6 +48,12 @@ class List extends Component {
                     {boardId=="DOWN LEFT" && index==0?<div className={'missing'}>Faltantes</div>:''}
                     {boardId=="DOWN LEFT" && index==0?<div className={'dashed-line'} />:''}
                     {boardId=="DOWN LEFT" && index==0?<div className={'dashed-line-vertical'} />:''}
+                    {boardId=="DOWN RIGHT" && index==0?<div className={'influence-power'}>Poder de influência</div>:''}
+                    {boardId=="DOWN RIGHT" && index==0?<div className={'impact'}>Impacto</div>:''}
+                    {boardId=="DOWN RIGHT" && index==0?<div className={'line'}></div>:''}
+                    {boardId=="DOWN RIGHT" && index==0?<div className={'line-vertical'}></div>:''}
+                    {boardId=="DOWN RIGHT" && index==0?<div className={'arrow'}></div>:''}
+                    {boardId=="DOWN RIGHT" && index==0?<div className={'arrow-vertical'}></div>:''}
                     {provided.placeholder}
                     </>
                 )}

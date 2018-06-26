@@ -102,12 +102,12 @@ Unlike a certain other website...`
             },
             {
                 _id: shortid.generate(),
-                title: "Poder de influência",
+                //title: "Poder de influência",
                 cards: appendAttributes(list3)
             },
             {
                 _id: shortid.generate(),
-                title: "Impacto",
+                //title: "Impacto",
                 cards: appendAttributes(list3)
             }
         ],

@@ -249,3 +249,60 @@
   left: 25.75%;
   top: 400px;
 }
+
+.influence-power {
+  transform: rotate(-90deg);
+  position: absolute;
+  color: #8b8b8b;
+  left: 70.25%;
+  top: 470px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.impact {
+  position: absolute;
+  color: #8b8b8b;
+  left: 92.5%;
+  top: 670px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.line {
+  position: absolute;
+  border-top: solid 1px #8f8f8f;
+  width: 46.9%;
+  left: 51.5%;
+  top: 690px;
+}
+
+.line-vertical {
+  position: absolute;
+  border-left: solid 1px #8f8f8f;
+  height: 305px;
+  left: 75.25%;
+  top: 385px;
+}
+
+.arrow {
+  position: absolute;
+  border: solid #8f8f8f;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  left: 97.8%;
+  top: 687px;
+}
+
+.arrow-vertical {
+  position: absolute;
+  border: solid #8f8f8f;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  left: 75%;
+  top: 385px;
+}
