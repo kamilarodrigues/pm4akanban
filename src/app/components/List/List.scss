@@ -140,7 +140,7 @@
 }
 
 .height-bottom-right-0 {
-  height: 335px;
+  height: 395px;
 }
 
 .height-bottom-right-1 {
@@ -148,12 +148,12 @@
 }
 
 .height-bottom-right-2 {
-  height: 310px;
+  height: 370px;
   border: none !important;
 }
 
 .height-bottom-right-3 {
-  height: 310px;
+  height: 370px;
   border: none !important;
 }
 
@@ -187,12 +187,16 @@
   height: 103px !important;
 }
 
-.list-card-small {
+.list-card-down-left-available {
   height: 238px !important;
 }
 
-.list-card-ultra-small {
+.list-card-down-left-missing {
   height: 90px !important;
+}
+
+.list-card-down-right {
+  height: 300px !important;
 }
 
 .cards-wrapper::-webkit-scrollbar {
@@ -233,7 +237,7 @@
 .dashed-line {
   position: absolute;
   border-top: dashed 1px #bdbdbd;
-  width: 635px;
+  width: 47%;
   left: 25px;
   top: 700px;
 }
@@ -242,6 +246,6 @@
   position: absolute;
   border-left: dashed 1px #bdbdbd;
   height: 435px;
-  left: 350px;
+  left: 25.75%;
   top: 400px;
 }

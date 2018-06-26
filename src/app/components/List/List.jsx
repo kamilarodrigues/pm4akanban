@@ -38,7 +38,7 @@ class List extends Component {
                                 cards={list.cards}
                                 boardId={boardId}
                             />
-                            <div className={boardId=="DOWN RIGHT"?(index==2||index==3?'cards-wrapper list-card-small':'cards-wrapper'):(boardId=="DOWN LEFT"?(index!=0?'cards-wrapper list-card-'+(index==1||index==2?'small':'ultra-small'):'cards-wrapper'):'cards-wrapper')}>
+                            <div className={boardId=="DOWN RIGHT"?(index==2||index==3?'cards-wrapper list-card-down-right':'cards-wrapper'):(boardId=="DOWN LEFT"?(index!=0?'cards-wrapper list-card-'+(index==1||index==2?'down-left-available':'down-left-missing'):'cards-wrapper'):'cards-wrapper')}>
                                 <Cards listId={list._id} index={index} boardId={boardId} listTitle={list.title}/>
                             </div>
                         </div>
