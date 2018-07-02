@@ -50,7 +50,22 @@ Unlike a certain other website...`
             {
                 _id: shortid.generate(),
                 title: "Objetivos de negócio",
+                cards: appendAttributes(list4)
+            },
+            {
+                _id: shortid.generate(),
+                //title: "Indicador de sucesso",
                 cards: appendAttributes(list1)
+            },
+            {
+                _id: shortid.generate(),
+                //title: "Indicador de sucesso",
+                cards: appendAttributes(list2)
+            },
+            {
+                _id: shortid.generate(),
+                //title: "Meta",
+                cards: appendAttributes(list2)
             },
             {
                 _id: shortid.generate(),

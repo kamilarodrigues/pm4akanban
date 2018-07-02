@@ -130,12 +130,15 @@ class Board extends Component {
 
   render = () => {
     const { lists, boardTitle, boardId, boardColor } = this.props;
-    var upList = lists.splice(0, 4);
-    var downList = lists.splice(0, 11);
-    var downLeftList = downList.splice(0, 5);
-    var downRightList = downList.splice(0, 12);
+    var businessGoalsList = [lists[0], lists[1], lists[2], lists[3]];
+    var investigationsAndQuestionsList = [lists[4]];
+    var discoveriesList = [lists[5]];
+    var solutionsList = [lists[6]];
+    var dataSourcesList = [lists[7], lists[8], lists[9], lists[10], lists[11]];
+    var downRightList = [lists[12], lists[13], lists[14], lists[15]];
     return (
       <>
+      <div>
         <div className={classnames("board", boardColor)}>
           <Helmet>
             <title>{boardTitle} | React Kanban</title>
@@ -146,16 +149,16 @@ class Board extends Component {
           >
             <DragDropContext onDragEnd={this.handleDragEnd}>
               <Droppable
-                droppableId={boardId}
+                droppableId="BUSINESS GOALS"
                 type="COLUMN"
                 direction="horizontal">
                 {provided => (
                   <div className="lists" ref={provided.innerRef}>
-                    {upList.map((list, index) => (
+                    {businessGoalsList.map((list, index) => (
                       <List
-                        list={list}
-                        boardId={boardId}
-                        index={index}
+                         list={list}
+                        boardId="BUSINESS GOALS"
+                         index={index}
                         key={list._id}
                       />
                     ))}
@@ -178,16 +181,114 @@ class Board extends Component {
           >
             <DragDropContext onDragEnd={this.handleDragEnd}>
               <Droppable
-                droppableId="DOWN LEFT"
+                droppableId="INVESTIGATIONS AND QUESTIONS"
                 type="COLUMN"
                 direction="horizontal">
                 {provided => (
                   <div className="lists" ref={provided.innerRef}>
-                    {downLeftList.map((list, index) => (
+                    {investigationsAndQuestionsList.map((list, index) => (
                       <List
-                        list={list}
-                        boardId={"DOWN LEFT"}
-                        index={index}
+                         list={list}
+                        boardId="INVESTIGATIONS AND QUESTIONS"
+                         index={index}
+                        key={list._id}
+                      />
+                    ))}
+                    {provided.placeholder}
+                  </div>
+                )}
+              </Droppable>
+            </DragDropContext>
+          </div>
+          <div className="board-underlay" />
+        </div>
+
+        <div className={classnames("board", boardColor)}>
+          <Helmet>
+            <title>{boardTitle} | React Kanban</title>
+          </Helmet>
+          <div className="lists-wrapper"
+            onMouseDown={this.handleMouseDown}
+            onWheel={this.handleWheel}
+          >
+            <DragDropContext onDragEnd={this.handleDragEnd}>
+              <Droppable
+                droppableId="DISCOVERIES"
+                type="COLUMN"
+                direction="horizontal">
+                {provided => (
+                  <div className="lists" ref={provided.innerRef}>
+                    {discoveriesList.map((list, index) => (
+                      <List
+                         list={list}
+                        boardId="DISCOVERIES"
+                         index={index}
+                        key={list._id}
+                      />
+                    ))}
+                    {provided.placeholder}
+                  </div>
+                )}
+              </Droppable>
+            </DragDropContext>
+          </div>
+          <div className="board-underlay" />
+        </div>
+
+        <div className={classnames("board", boardColor)}>
+          <Helmet>
+            <title>{boardTitle} | React Kanban</title>
+          </Helmet>
+          <div className="lists-wrapper"
+            onMouseDown={this.handleMouseDown}
+            onWheel={this.handleWheel}
+          >
+            <DragDropContext onDragEnd={this.handleDragEnd}>
+              <Droppable
+                droppableId="SOLUTIONS"
+                type="COLUMN"
+                direction="horizontal">
+                {provided => (
+                  <div className="lists" ref={provided.innerRef}>
+                    {solutionsList.map((list, index) => (
+                      <List
+                         list={list}
+                        boardId="SOLUTIONS"
+                         index={index}
+                        key={list._id}
+                      />
+                    ))}
+                    {provided.placeholder}
+                  </div>
+                )}
+              </Droppable>
+            </DragDropContext>
+          </div>
+          <div className="board-underlay" />
+        </div>
+        </div>
+
+        <div>
+        <div className={classnames("board", boardColor)}>
+          <Helmet>
+            <title>{boardTitle} | React Kanban</title>
+          </Helmet>
+          <div className="lists-wrapper"
+            onMouseDown={this.handleMouseDown}
+            onWheel={this.handleWheel}
+          >
+            <DragDropContext onDragEnd={this.handleDragEnd}>
+              <Droppable
+                droppableId="DATA SOURCES"
+                type="COLUMN"
+                direction="horizontal">
+                {provided => (
+                  <div className="lists" ref={provided.innerRef}>
+                    {dataSourcesList.map((list, index) => (
+                      <List
+                         list={list}
+                        boardId="DATA SOURCES"
+                         index={index}
                         key={list._id}
                       />
                     ))}
@@ -231,7 +332,7 @@ class Board extends Component {
           </div>
           <div className="board-underlay" />
         </div>
-
+        </div>
         <div className="space" />
       </>
     );

@@ -2,7 +2,8 @@
 
 .board {
   display: inline-flex;
-  min-width: 100%;
+  min-width: 25%;
+  max-width: 50%;
 }
 
 .board-underlay {

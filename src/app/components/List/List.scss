@@ -21,137 +21,204 @@
   transition: box-shadow 0.15s, background 0.3s;
 }
 
-.position-0 {
-  width: 25% !important;
+//OBJETIVOS DE NEGÓCIO (CARD DE FUNDO)
+.position-businessgoals-0 {
+  width: 100% !important;
 }
-
-.position-1 {
-  width: 25% !important;
-}
-
-.position-2 {
-  width: 25% !important;
-}
-
-.position-3 {
-  width: 25% !important;
-}
-
-.position-bottom-left-0 {
-  width: 50% !important;
-  position: absolute;
-  top: 345px;
-}
-
-.position-bottom-left-1 {
-  width: 24% !important;
-  position: absolute;
-  top: 370px;
-  left: 1%;
-}
-
-.position-bottom-left-2 {
-  width: 24% !important;
-  position: absolute;
-  top: 370px;
-  left: 25.5%;
-}
-
-.position-bottom-left-3 {
-  width: 24% !important;
-  position: absolute;
-  top: 700px;
-  left: 1%;
-}
-
-.position-bottom-left-4 {
-  width: 24% !important;
-  position: absolute;
-  top: 700px;
-  left: 25.5%;
-}
-
-.position-bottom-right-0 {
-  width: 50% !important;
-  position: absolute;
-  top: 345px;
-  left: 50%;
-}
-
-.position-bottom-right-1 {
-  width: 50% !important;
-  position: absolute;
-  top: 775px;
-  left: 50%;
-}
-
-.position-bottom-right-2 {
-  width: 24% !important;
-  position: absolute;
-  top: 370px;
-  left: 50.5%;
-}
-
-.position-bottom-right-3 {
-  width: 24% !important;
-  position: absolute;
-  top: 370px;
-  left: 75%;
-}
-
-.height-0 {
-  height: 285px;
-}
-
-.height-1 {
-  height: 285px;
-}
-
-.height-2 {
-  height: 285px;
-}
-
-.height-3 {
-  height: 285px;
-}
-
-.height-bottom-left-0 {
+.height-businessgoals-0 {
   height: 500px;
 }
 
-.height-bottom-left-1 {
-  height: 310px;
+//OBJETIVOS DE NEGÓCIO (LISTA PRINCIPAL)
+.position-businessgoals-1 {
+  position: absolute;
+  width: 24% !important;
+  left: 0.5%;
+  top: 32px;
+}
+.height-businessgoals-1 {
+  height: 305px;
   border: none !important;
 }
-
-.height-bottom-left-2 {
-  height: 310px;
-  border: none !important;
+.list-card-businessgoals-1 {
+  height: 248px !important;
 }
 
-.height-bottom-left-3 {
+//OBJETIVOS DE NEGÓCIO (INDICADOR DE SUCESSO)
+.position-businessgoals-2 {
+  position: absolute;
+  width: 11.75% !important;
+  left: 0.5%;
+  top: 370px;
+}
+.height-businessgoals-2 {
   height: 145px;
   border: none !important;
 }
+.list-card-businessgoals-2 {
+  height: 90px !important;
+}
 
-.height-bottom-left-4 {
+//OBJETIVOS DE NEGÓCIO (META)
+.position-businessgoals-3 {
+  position: absolute;
+  width: 11.75% !important;
+  left: 12.4%;
+  top: 370px;
+}
+.height-businessgoals-3 {
   height: 145px;
   border: none !important;
 }
+.list-card-businessgoals-3 {
+  height: 90px !important;
+}
 
+//INVESTIGAÇÃO/PERGUNTA(S)
+.position-investigationsandquestions {
+  width: 100% !important;
+}
+.height-investigationsandquestions {
+  height: 500px;
+}
+.list-card-investigationsandquestions {
+  height: 428px !important;
+}
+
+//DESCOBERTA(S)
+.position-discoveries {
+  width: 100% !important;
+}
+.height-discoveries {
+  height: 500px;
+}
+.list-card-discoveries {
+  height: 428px !important;
+}
+
+//SOLUÇÃO/SOLUÇÕES
+.position-solutions {
+  width: 100% !important;
+}
+.height-solutions {
+  height: 500px;
+}
+.list-card-solutions {
+  height: 428px !important;
+}
+
+//FONTES DE DADOS (CARD DE FUNDO)
+.position-datasources-0 {
+  width: 203% !important;
+}
+.height-datasources-0 {
+  height: 500px;
+}
+
+//FONTES DE DADOS (INTERNAS (DISPONÍVEIS))
+.position-datasources-1 {
+  width: 23% !important;
+  position: absolute;
+  top: 588px;
+  left: 1%;
+}
+.height-datasources-1 {
+  height: 310px;
+  border: none !important;
+}
+.list-card-datasources-1 {
+  height: 238px !important;
+}
+
+//FONTES DE DADOS (EXTERNAS (DISPONÍVEIS))
+.position-datasources-2 {
+  width: 23% !important;
+  position: absolute;
+  top: 588px;
+  left: 26%;
+}
+.height-datasources-2 {
+  height: 310px;
+  border: none !important;
+}
+.list-card-datasources-2 {
+  height: 238px !important;
+}
+
+//FONTES DE DADOS (INTERNAS (FALTANTES))
+.position-datasources-3 {
+  width: 23% !important;
+  position: absolute;
+  top: 918px;
+  left: 1%;
+}
+.height-datasources-3 {
+  height: 145px;
+  border: none !important;
+}
+.list-card-datasources-3 {
+  height: 90px !important;
+}
+
+//FONTES DE DADOS (EXTERNAS (FALTANTES))
+.position-datasources-4 {
+  width: 23% !important;
+  position: absolute;
+  top: 918px;
+  left: 26%;
+}
+.height-datasources-4 {
+  height: 145px;
+  border: none !important;
+}
+.list-card-datasources-4 {
+  height: 90px !important;
+}
+
+//MATRIZ INFLUÊNCIA DAS PESSOAS E RISCOS
+.position-bottom-right-0 {
+  width: 49.25% !important;
+  position: absolute;
+  top: 563px;
+  left: 50.4%;
+}
 .height-bottom-right-0 {
   height: 395px;
 }
+.list-card-down-right {//VÁLIDO PARA AS DUAS LISTAS
+  height: 288px !important;
+}
 
+//PAYBACK PERIOD
+.position-bottom-right-1 {
+  width: 49.25% !important;
+  position: absolute;
+  top: 993px;
+  left: 50.4%;
+}
 .height-bottom-right-1 {
   height: 70px;
 }
 
+//MATRIZ INFLUÊNCIA DAS PESSOAS E RISCOS (ESQUERDA)
+.position-bottom-right-2 {
+  width: 24% !important;
+  position: absolute;
+  top: 588px;
+  left: 50.5%;
+}
 .height-bottom-right-2 {
   height: 370px;
   border: none !important;
 }
 
+//MATRIZ INFLUÊNCIA DAS PESSOAS E RISCOS (DIREITA)
+.position-bottom-right-3 {
+  width: 24% !important;
+  position: absolute;
+  top: 588px;
+  left: 75.5%;
+}
 .height-bottom-right-3 {
   height: 370px;
   border: none !important;
@@ -183,22 +250,6 @@
   height: 75%;
 }
 
-.list-card {
-  height: 103px !important;
-}
-
-.list-card-down-left-available {
-  height: 238px !important;
-}
-
-.list-card-down-left-missing {
-  height: 90px !important;
-}
-
-.list-card-down-right {
-  height: 288px !important;
-}
-
 .cards-wrapper::-webkit-scrollbar {
   width: 8px;
   border-radius: 2px;
@@ -219,7 +270,7 @@
   position: absolute;
   color: #8b8b8b;
   left: 22.25%;
-  top: 525px;
+  top: 750px;
   font-family: inherit;
   font-size: 15px;
 }
@@ -229,17 +280,33 @@
   position: absolute;
   color: #8b8b8b;
   left: 22.85%;
-  top: 770px;
+  top: 975px;
   font-family: inherit;
   font-size: 15px;
+}
+
+.dashed-line-businessgoals {
+  position: absolute;
+  border-top: dashed 1px #bdbdbd;
+  width: 21.5%;
+  left: 22px;
+  top: 345px;
 }
 
 .dashed-line {
   position: absolute;
   border-top: dashed 1px #bdbdbd;
-  width: 47%;
+  width: 46.5%;
   left: 25px;
-  top: 700px;
+  top: 915px;
+}
+
+.dashed-line-vertical-businessgoals {
+  position: absolute;
+  border-left: dashed 1px #bdbdbd;
+  height: 155px;
+  left: 12.5%;
+  top: 345px;
 }
 
 .dashed-line-vertical {
@@ -247,7 +314,25 @@
   border-left: dashed 1px #bdbdbd;
   height: 435px;
   left: 25.75%;
-  top: 400px;
+  top: 615px;
+}
+
+.success-indicator {
+  position: absolute;
+  color: #8b8b8b;
+  left: 1.5%;
+  top: 350px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.goal {
+  position: absolute;
+  color: #8b8b8b;
+  left: 13%;
+  top: 350px;
+  font-family: inherit;
+  font-size: 14px;
 }
 
 .influence-power {
@@ -255,7 +340,7 @@
   position: absolute;
   color: #8b8b8b;
   left: 70.25%;
-  top: 470px;
+  top: 665px;
   font-family: inherit;
   font-size: 14px;
 }
@@ -263,8 +348,8 @@
 .impact {
   position: absolute;
   color: #8b8b8b;
-  left: 92.5%;
-  top: 670px;
+  left: 93.5%;
+  top: 890px;
   font-family: inherit;
   font-size: 14px;
 }
@@ -274,7 +359,7 @@
   border-top: solid 1px #8f8f8f;
   width: 46.9%;
   left: 51.5%;
-  top: 690px;
+  top: 908px;
 }
 
 .line-vertical {
@@ -282,7 +367,7 @@
   border-left: solid 1px #8f8f8f;
   height: 305px;
   left: 75.25%;
-  top: 385px;
+  top: 603px;
 }
 
 .arrow {
@@ -293,7 +378,7 @@
   padding: 3px;
   transform: rotate(-45deg);
   left: 97.8%;
-  top: 687px;
+  top: 905px;
 }
 
 .arrow-vertical {
@@ -304,5 +389,5 @@
   padding: 3px;
   transform: rotate(-135deg);
   left: 75%;
-  top: 385px;
+  top: 603px;
 }

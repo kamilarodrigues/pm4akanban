@@ -27,10 +27,34 @@ class Cards extends Component {
     this.listEnd.scrollIntoView();
   };
 
+  isNotDroppable = (boardId, index) => {
+    if(boardId == "BUSINESS GOALS") {
+      if(index == 0) {
+        return true;
+      } else {
+        return false;
+      }
+    } else if(boardId == "DATA SOURCES") {
+      if(index == 0) {
+        return true;
+      } else {
+        return false;
+      }
+    } else if(boardId == "DOWN RIGHT") {
+      if(index == 0 || index == 1) {
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+      return true;
+    }
+  };
+
   render() {
     const { listId, cards, index, boardId, listTitle } = this.props;
     return (
-      <Droppable droppableId={listId} isDropDisabled={boardId=="DOWN LEFT"?(index==0?true:false):(boardId=="DOWN RIGHT"?(index==0 || index==1?true:false):false)}>
+      <Droppable droppableId={listId} isDropDisabled={this.isNotDroppable(boardId, index)}>
         {(provided, { isDraggingOver }) => (
           <>
             <div className="cards" ref={provided.innerRef}>
