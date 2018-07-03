@@ -55,17 +55,17 @@ Unlike a certain other website...`
             {
                 _id: shortid.generate(),
                 //title: "Indicador de sucesso",
-                cards: appendAttributes(list1)
+                cards: appendAttributes(list3)
             },
             {
                 _id: shortid.generate(),
                 //title: "Indicador de sucesso",
-                cards: appendAttributes(list2)
+                cards: appendAttributes(list3)
             },
             {
                 _id: shortid.generate(),
                 //title: "Meta",
-                cards: appendAttributes(list2)
+                cards: appendAttributes(list3)
             },
             {
                 _id: shortid.generate(),
